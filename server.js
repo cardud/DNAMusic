@@ -9,10 +9,10 @@ app.set('view engine', 'ejs');
 
 
 // page0 page 
-app.get('/', function(req, res) {
+app.get('/index', function(req, res) {
     
     var overview = "Welcome travelor Jane"
-    res.render('pages/page0', {
+    res.render('pages/index', {
     
         overview: overview
     });
