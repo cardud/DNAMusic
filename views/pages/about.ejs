@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container p-3 my-3 bg-dark text-purple">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Choices</a>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/KnifeYes">Knife</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/SwordYes">Sword</a>
+              </li>
+            
+        
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <div class="jumbotron ">
+            <h1> Our Adveture begins... </h1>
+            <p> "insert nice poem" %></p>
+            <p> You arrive at bershas with your fellow travelors Alif,Jake and Harlow. Berhsa tells you that
+                she has an important job for and opens up her wepons closet. She offers you either a <b> <a href = "/KnifeYes"> Knife </a> </b> or <b> <a href = "/SwordYes"> Sword </a> </b>
+            </p>
+            <!--- <button onclick="window.location.href = 'KnifeYes.ejs';">Link</button>-->
+          
+            
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+</html>
