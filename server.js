@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 
 
 // page0 page 
-app.get('/index', function(req, res) {
+app.get('/', function(req, res) {
     
     var overview = "Welcome travelor Jane"
     res.render('pages/index', {
@@ -66,6 +66,9 @@ app.get('/KillSanta', function(req, res) {
 });
 app.get('/choice', function(req, res) {
     res.render('pages/choice');
+});
+app.get('/rules', function(req, res) {
+    res.render('pages/rules');
 });
 app.listen(8080);
 console.log('http://localhost:8080');
