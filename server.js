@@ -1,74 +1,39 @@
-// load the things we need
-var express = require('express');
-var app = express();
+/*const http = require("http")
+const fs = require("fs")
+const port = 8080
 
-// set the view engine to ejs
-app.set('view engine', 'ejs');
+const server = http.createServer(function(req,res){
+res.writeHead(200,{"Content-Type":"text/html"})
+fs.readFile("index",function(error,data){
+    if (error){
+        res.writeHead(404)
+        res.write("error")
+    }else{
+        res.write(data)
+    }
+    res.end()
+})
 
-// use res.render to load up an ejs view file
+})*/
 
+const server = require('server');
+const { get, post } = server.router;
+ 
 
-// page0 page 
-app.get('/', function(req, res) {
-    
-    var overview = "Welcome travelor Jane"
-    res.render('pages/index', {
-    
-        overview: overview
-    });
-});
+server({ port: 8000 }, [
+  get('/', ctx => "index" ),
+  post('/', ctx => {
+    console.log(ctx.data);
+    return 'ok';
+  })
+]);
 
-// about page///
-app.get('/about', function(req, res) {
-    //use later if needed var about = ;
-    res.render('pages/about', {
+app.get('/index', function(req, res) {
+  res.render('pages/index');
+  
 
-    
-    });
-    
-});
-
-
-
-// using energy///santa?
-app.get('/Santa', function(req, res) {
-    res.render('pages/Santa');
-});
-// about page/// spirit orb
-app.get('/Spiritorb', function(req, res) {
-    res.render('pages/Spiritorb');
-});
-app.get('/KnifeYes', function(req, res) {
-    res.render('pages/KnifeYes');
 });
 
-app.get('/OrbNo', function(req, res) {
-    res.render('pages/OrbNo');
-});
-app.get('/endingOne', function(req, res) {
-    res.render('pages/endingOne');
-});
-app.get('/SwordYes', function(req, res) {
-    res.render('pages/SwordYes');
-});
-app.get('/MurderJake', function(req, res) {
-    res.render('pages/Murderjake');
-});
-app.get('/spiritorbWSword', function(req, res) {
-    res.render('pages/spiritorbWSword');
-});
-app.get('/hat', function(req, res) {
-    res.render('pages/hat');
-});
-app.get('/KillSanta', function(req, res) {
-    res.render('pages/KillSanta');
-    
-});
-app.get('/choice', function(req, res) {
-    res.render('pages/choice');
-});
-app.get('/rules', function(req, res) {
-    res.render('pages/rules');
-});
-app.listen(8080);
-console.log('http://localhost:8080');
+
+
+console.log("localhost:8000")

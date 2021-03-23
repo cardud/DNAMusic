@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script defer src='./main.js'></script>
+        <link rel="stylesheet" href="CSS.css">
+        
+    </head>
+    
+    <body>
+        <div class = "container">
+        <h1> DNA and RNA Base Sequence Converter: </h1>
+        <h2> Nitrigenous Bases:</h2>
+        <audio id="audioC"><source src="/pianoC.wav"></audio>
+        <audio id="audioA"><source src = "/pianoA.wav" > </audio>
+        <audio id = "audioE"><source src = "/pianoE.wav"></audio> 
+        <audio id = "audioD"><source src = "/pianoD.wav"> </audio>
+        <audio id = "audioG"><source src = "/pianoG.wav"></audio> 
+
+            <div class = "btn">
+                <img src="adenine.png" id = "ad">
+                <img src="thymine.png" id = "ty">
+                <img src="cytosine.png" id = "cy">
+                <img src="guanine.png" id = "gu">
+                <img src="uracil.png" id = "ur">
+                <button onmouseover="noteA.play()" type="button" id = "Ade">Adenine</button>
+                <button onmouseover="noteD.play()" type="button" id = "thy">Thymine</button>
+                <button onmouseover="noteC.play()" type="button" id = "cyt"> Cytosine</button>
+                <button onmouseover="noteG.play()" type="button" id = "gua">Guanine</button>
+                <button onmouseover="noteE.play()" type="button" id = "ura">Uracil</button>
+
+                <input type="text" id="s">
+                <button onclick="startSequence(); stop = false" type = "button" id ="start">Play Sequence</button>
+                <button onclick="stop = true" type="button" id="stopA">Pause Audio</button>
+            </div>
+        </div>
+    </body>
+</html>
