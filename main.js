@@ -8,27 +8,7 @@ const s = document.getElementById('s');
 
 let stop = false;
 
-f
-/*
-function findS(){
-    for(let i = 0; i <= s.length; i++){
-        if(s[i] == "a" ){
-            var a = document.getElementById("audio"); 
-            a.play();
-        }
-    }  
-}
 
-
-function PAudio() {
-    var x = document.getElementById("s").value;  
-    if(x=="a"){
-      var a = document.getElementById("audio"); 
-      a.play();
-    }
-}
-*/
-// ---
 
 function startSequence() {
     playSequence(s.value);
