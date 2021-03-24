@@ -1,5 +1,6 @@
 body {
     background-color: black;
+   
     padding-top: 20%;
   }
   
@@ -10,6 +11,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    background-color: black;
     background-color: #555;
     color: white;
     font-size: 16px;
@@ -17,17 +19,19 @@ body {
     cursor: pointer;
     /*text-align: center;*/
     width: 600px;
-    height:700px;
+    height:688px;
   }
+
   h1{
-    position: fixed;
+    position: absolute;
     top:50%;
+    height: 6%;
     background-color:bisque;
     color: black
   }
   h2{
-    position:fixed;
-    top:1%;
+    position:absolute;
+    bottom: 92.5%;
     background-color: bisque;
     color: black;
   }
@@ -137,6 +141,37 @@ body {
     background-color: #f8f8f8;
     resize: none;
   }
+  .main #start{
+    position: absolute;
+    bottom: 10%;
+    width: 17%;
+    right: 70%;
+    background-color: rgb(100, 6, 100);
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+    .main #stop{
+    position: absolute;
+    bottom: 10%;
+    width: 17%;
+    right: 40%;
+    background-color: rgb(100, 6, 100);
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }   
+     .main #info{
+    position: absolute;
+    bottom: 10%;
+    height:7.75%;
+    width: 20%;
+    left: 73%;
+    background-color: rgb(100, 6, 100);
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }     
+  
+
+  
   
 
 
