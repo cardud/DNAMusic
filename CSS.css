@@ -166,7 +166,7 @@ body {
       }
     .main #stop:hover{
       background-color: darkorchid;
-      color: white;
+      color: black;
       }     
      .main #info{
     position: absolute;
@@ -180,7 +180,7 @@ body {
       }
     .main #info:hover{
       background-color: darkorchid;
-      color: white;
+      color:black;
       }
     .btn #generate{
       position: absolute;
@@ -194,7 +194,8 @@ body {
           }     
     .btn #generate:hover{
       background-color: darkorchid;
-      color: white;
+      color :black;
+      
     }
 
 
