@@ -9,7 +9,7 @@
     <body>
         <div class= "container">
         <h1> DNA and RNA Base Sequence Converter: </h1>
-        <h2> Nitrigenous Bases:</h2>
+        <h2> Nitrogenous Bases:</h2>
         <audio id="audioC"><source src="/Pc.wav"></audio>
         <audio id="audioA"><source src = "/PA.wav" > </audio>
         <audio id = "audioE"><source src = "/Pe.wav"></audio> 
@@ -27,12 +27,15 @@
                 <button onclick="noteC.play()" type="button" id = "cyt"> Cytosine</button>
                 <button onclick="noteG.play()" type="button" id = "gua">Guanine</button>
                 <button onclick="noteE.play()" type="button" id = "ura">Uracil</button>
+                <button onclick = "window.location.href='https://www.bioinformatics.org/sms2/random_dna.html';" type ="button" id = "generate">Generate Random Sequence</button>
+                
+            
 
                 <input type="text" id="s">
                 <div class = "main">
                     <button onclick="startSequence(); stop = false" type = "button" id ="start">Play Sequence</button>
                     <button onclick="stop = true" type="button" id="stop">Stop Audio</button>
-                    <button onclick = "window.alert('click the above bases to hear their notes then type in a sequence of nucleotides to create a song ');" id = "info">Instructions</button>
+                    <button onclick = "window.alert('click the above bases to hear their notes' <br> 'type in a sequence of nucleotides to create a song');" id = "info">Instructions</button>
                 </div>
                
             </div>

@@ -131,6 +131,7 @@ body {
   }
   #s{
     position: absolute;
+    right:.25%;
     width: 100%;
     height: 150px;
     top: 60%;
@@ -150,6 +151,10 @@ body {
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
+    .main #start:hover{
+      background-color: darkorchid;
+      color: white;
+      }    
     .main #stop{
     position: absolute;
     bottom: 10%;
@@ -158,7 +163,11 @@ body {
     background-color: rgb(100, 6, 100);
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      }   
+      }
+    .main #stop:hover{
+      background-color: darkorchid;
+      color: white;
+      }     
      .main #info{
     position: absolute;
     bottom: 10%;
@@ -168,7 +177,30 @@ body {
     background-color: rgb(100, 6, 100);
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      }     
+      }
+    .main #info:hover{
+      background-color: darkorchid;
+      color: white;
+      }
+    .btn #generate{
+      position: absolute;
+      bottom: 2%;
+      height:7.75%;
+      width: 50%;
+      left: 27%;
+      background-color: rgb(100, 6, 100);
+      font-size: larger;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          }     
+    .btn #generate:hover{
+      background-color: darkorchid;
+      color: white;
+    }
+
+
+           
+
+    
   
 
   

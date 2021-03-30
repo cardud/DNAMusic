@@ -5,7 +5,6 @@ let noteE = document.getElementById("audioE");
 let noteG = document.getElementById("audioG"); 
 
 const s = document.getElementById('s');
-
 let stop = false;
 
 
@@ -18,35 +17,35 @@ function pauseSequence(){
 }
 
 function playSound(letter) {
-    if(letter == "a" ){
+    if(letter == "A" ||( letter == "a")){
         if (noteA.paused) {
             noteA.play();
         } else {
             noteA.currentTime = 0;
         }
     }
-    if(letter == "t" ){
+    if(letter == "T" ||( letter == "t")){
         if (noteD.paused) {
             noteD.play();
         } else {
             noteD.currentTime = 0;
         }
     }
-    if(letter == "c"){
+    if(letter == "C" ||( letter == "c")){
         if (noteC.paused) {
             noteC.play();
         } else {
             noteC.currentTime = 0;
         }
     }
-    if(letter == "g"){
+    if(letter == "G" ||( letter == "g")){
         if (noteG.paused) {
             noteG.play();
         } else {
             noteG.currentTime = 0;
         }
     }
-    if(letter == "u"){
+    if(letter == "U" ||( letter == "u")){
         if (noteE.paused) {
             noteE.play();
         } else {
